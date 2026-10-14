@@ -1,4 +1,4 @@
-# Hafta 3: Testleri bu dosyaya SİZ yazacaksınız.
+,# Hafta 3: Testleri bu dosyaya SİZ yazacaksınız.
 #
 # Aşağıda örnek olarak bir test var. Yanına her fonksiyon için kendi testlerinizi ekleyin.
 # Çalıştırmak için bu klasörde:  python -m pytest -v
