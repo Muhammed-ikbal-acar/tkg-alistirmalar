@@ -6,16 +6,15 @@ def test_sifre_gucu_bos_hata():
         sifre_gucu("")
 
 def test_sifre_gucu_zayif():
-    assert sifre_gucu("1234567") == "zayıf" 
+    assert sifre_gucu("1234567") == "zayıf"
 
 def test_sifre_gucu_orta():
-    assert sifre_gucu("12345678") == "orta"  
-    assert sifre_gucu("12345678901") == "orta" 
+    assert sifre_gucu("12345678") == "orta"
+    assert sifre_gucu("12345678901") == "orta"
 
 def test_sifre_gucu_guclu():
-    assert sifre_gucu("123456789012") == "güçlü"  
+    assert sifre_gucu("123456789012") == "güçlü"
     assert sifre_gucu("cokguclubirsifre") == "güçlü"
-
 
 def test_otopark_ucreti_negatif_hata():
     with pytest.raises(ValueError):
@@ -23,21 +22,19 @@ def test_otopark_ucreti_negatif_hata():
 
 def test_otopark_ucreti_ucretsiz():
     assert otopark_ucreti(0) == 0
-    assert otopark_ucreti(15) == 0  
+    assert otopark_ucreti(15) == 0
 
 def test_otopark_ucreti_20tl():
-    assert otopark_ucreti(16) == 20 
-    assert otopark_ucreti(60) == 20  
+    assert otopark_ucreti(16) == 20
+    assert otopark_ucreti(60) == 20
 
 def test_otopark_ucreti_40tl():
-    assert otopark_ucreti(61) == 40  
-    assert otopark_ucreti(180) == 40 
+    assert otopark_ucreti(61) == 40
+    assert otopark_ucreti(180) == 40
 
 def test_otopark_ucreti_60tl():
-    assert otopark_ucreti(181) == 60 
+    assert otopark_ucreti(181) == 60
     assert otopark_ucreti(500) == 60
-
-
 
 def test_yuzde_degisim_sifir_hata():
     with pytest.raises(ValueError):
