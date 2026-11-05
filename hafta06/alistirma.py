@@ -21,10 +21,10 @@ def bilet_fiyati(yas, ogrenci, hafta_sonu):
         return 0
 
     fiyat = 150 if hafta_sonu else 100
-    
+
     if ogrenci:
         fiyat -= 30
-        
+
     return fiyat
 
 
